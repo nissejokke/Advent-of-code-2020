@@ -1,8 +1,8 @@
-input = open("input.txt", "r").read()
+#input = open("X/input.txt", "r").read()
 
-# input = """
+input = """
 
-# """
+"""
 
 lines = input.strip().split("\n")
 

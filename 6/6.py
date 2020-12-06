@@ -1,4 +1,4 @@
-input = open("input.txt", "r").read()
+input = open("6/input.txt", "r").read()
 
 # input = """
 # abc
