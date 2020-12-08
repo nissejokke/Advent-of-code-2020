@@ -18,18 +18,16 @@ instructions = []
 for line in lines:
     intr = line[0:3]
     arg = int(line[4:])
-
     instructions.append((intr, arg))
     
 acc = 0
 index = 0
-visited = dict()
+visited = set()
 while True:
-    if visited.get(index) != None:
+    if index in visited:
         break
 
-    visited[index] = True
-
+    visited.add(index)
     instruction = instructions[index]
     instr = instruction[0]
     arg = instruction[1]

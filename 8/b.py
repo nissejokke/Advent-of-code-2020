@@ -23,14 +23,14 @@ for line in lines:
 def run(instructions) -> (int, bool):
     acc = 0
     index = 0
-    visited = dict()
+    visited = set()
     normal_termination = True
     while index < len(instructions):
-        if visited.get(index) != None:
+        if index in visited:
             normal_termination = False
             break
 
-        visited[index] = True
+        visited.add(index)
 
         try:
             instruction = instructions[index]
